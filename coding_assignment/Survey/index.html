@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading"><h1>Survey Form</h1></div>
+        
+        <div class="main">
+            <form id="surveyForm">
+                <label>Name:</label>
+                <input type="text" name="fn" placeholder="First Name" required>
+
+                <input type="text" name="ln" placeholder="Last Name" required>     <br><br>
+
+                <label>Email:</label>
+                <input type="email" name="mail" placeholder="abc123@gmail.com" required>     <br><br>
+
+                <label>Date of Birth:</label>
+                <input type="date" name="dob"  required>     <br><br>
+
+                <label>Gender:</label>
+                <input type="checkbox" name="gender" value="Male">Male 
+                <input type="checkbox" name="gender" value="Female">Female  
+                <input type="checkbox" name="gender" value="Other">Other    <br> <br> 
+                
+                <label>Profession:</label>
+                <input type="text" name="pro"  required>     <br><br>
+
+                <label>Country:</label>
+                <select>
+                    <option value="">India</option>
+                    <option value="">Pakistan</option>
+                    <option value="">Australia</option>
+                    <option value="">China</option>
+                </select>
+
+                <label>Mobile No.:</label>
+                <input type="tel" name="mob" placeholder="123456789"  required>     <br><br>
+
+                <button onclick="resetForm()" class="btn">Reset</button>
+                <input type="submit"  class="sub">
+            </form>
+            <div class="footer">
+                <h6>Customer Survey Form | Design by <span>Sarique Raja</span></h6>
+                <script src="app.js"></script>
+            </div>
+        </div>
+    </div>
+  
+</body>
+</html>
